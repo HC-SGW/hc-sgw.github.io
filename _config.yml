@@ -3,15 +3,13 @@ first_name: Haoming
 middle_name: (Harvey)
 last_name: Chen
 contact_note: The best way to reach me is by email.
-description:
-  Haoming (Harvey) Chen is an undergraduate at Rice University researching generative modeling, flow matching, and diffusion models. Seeking
-  PhD opportunities for Fall 2027.
+description: Harvey Chen's research and CV. Undergraduate at Rice University.
 footer_text:
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/alshedivat/al-folio">al-folio</a>. Hosted on <a href="https://pages.github.com/">GitHub
   Pages</a>.
 keywords: Haoming Chen, Harvey Chen, Rice University, generative modeling, flow matching, diffusion models, graph reconstruction
 lang: en
-icon: ∇
+icon: favicon.png
 apple_touch_icon: null
 url: https://hc-sgw.github.io
 baseurl: ""
@@ -288,7 +286,7 @@ enable_cookie_consent: false
 enable_masonry: false
 enable_math: true
 enable_tooltips: false
-enable_darkmode: true
+enable_darkmode: false
 enable_navbar_social: false
 enable_project_categories: false
 enable_medium_zoom: false

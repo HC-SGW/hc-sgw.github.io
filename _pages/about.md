@@ -13,9 +13,9 @@ latest_posts:
   enabled: false
 ---
 
-I'm an undergraduate in Electrical and Computer Engineering at Rice University, graduating in May 2027.
+I'm Harvey, an Electrical and Computer Engineering undergraduate at Rice University. I expect to graduate in May 2027.
 
-I work with **Prof. Santiago Segarra** on generative methods for graph reconstruction and **Prof. César A. Uribe** on task-based alignment of occupational taxonomies.
+I work with [Prof. Santiago Segarra](https://scholar.google.com/citations?user=O1aSMXQAAAAJ&hl=en) on generative methods for graph reconstruction and [Prof. César A. Uribe](https://scholar.google.com/citations?user=b_uG-kEAAAAJ&hl=en) on task-based alignment of occupational taxonomies.
 
 <aside class="phd-note" aria-label="PhD opportunities" markdown="1">
 **Seeking PhD opportunities for Fall 2027.** My research interests include generative modeling, flow matching, and diffusion models. Please reach out to me at [hc80@rice.edu](mailto:hc80@rice.edu).

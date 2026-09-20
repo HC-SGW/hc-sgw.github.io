@@ -7,7 +7,7 @@ cv:
       degree: B.S. in Electrical and Computer Engineering
       date: Expected May 2027
       gpa: 3.98 / 4.00
-      coursework: "Honors Linear Algebra; Machine Learning: Concepts and Techniques; Introduction to Computer Vision; Learning from Sensor Data; Random Signals; Learning-Based Control (graduate, in progress)."
+      coursework: "Honors Linear Algebra; Machine Learning: Concepts and Techniques; Introduction to Computer Vision; Learning from Sensor Data; Random Signals."
   research:
     - role: Research Assistant
       institution: Rice University
@@ -61,8 +61,8 @@ cv:
   service:
     - role: Outreach Mentor
       organization: Rice Catalyst Eureka Outreach Program
-      date: November 2024–present
-      summary: Mentor Houston-area high-school students on research design, literature reviews, technical writing, and presentations; advise submissions to the Rice Eureka research journal.
+      date: November 2024–September 2026
+      summary: Mentored Houston-area high-school students on research design, literature reviews, technical writing, and presentations; advised submissions to the Rice Eureka research journal.
   projects:
     - title: NeuralSeed Real-Time Guitar Pedal
       date: Spring 2026
@@ -77,4 +77,4 @@ cv:
     - area: ML & data
       items: PyTorch, PyTorch Geometric, scikit-learn, NumPy, pandas, SciPy, NetworkX, POT, Matplotlib
     - area: Tools
-      items: Git, Linux, LaTeX
+      items: Git, Linux, LaTeX, Unity
