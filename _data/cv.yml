@@ -1,130 +1,80 @@
 cv:
   name: Haoming (Harvey) Chen
-  label: Undergraduate, Electrical and Computer Engineering
-  email: hc80@rice.edu
   location: Houston, Texas
-  summary: Undergraduate at Rice University interested in generative modeling, flow matching, and diffusion models. Seeking PhD opportunities for Fall 2027.
-  social_networks:
-    - network: GitHub
-      username: HC-SGW
-    - network: LinkedIn
-      username: haoming-chen-80989b292
-  sections:
-    Education:
-      - institution: Rice University
-        location: Houston, Texas
-        area: Electrical and Computer Engineering
-        studyType: B.S.
-        end_date: 2027-05
-        score: 3.98 / 4.00
-        highlights:
-          - Expected graduation in May 2027.
-          - "Selected coursework: Honors Linear Algebra; Machine Learning: Concepts and Techniques; Introduction to Computer Vision; Learning from Sensor Data;
-            Random Signals; Learning-Based Control (graduate, in progress)."
-    Research Experience:
-      - label: Research Assistant
-        details: "**Rice University** · May 2025–present
-
-
-          Advisor: Prof. Santiago Segarra
-
-
-          - Developed Prior-Informed Flow Matching (PIFM), a rectified-flow generative framework for missing-edge graph reconstruction conditioned on structural
-          priors.
-
-          - Developed and maintained a PyTorch codebase and evaluated link-prediction performance and graph-distribution metrics against baseline methods.
-
-          - Led experiments, analysis, figure preparation, and writing for a first-author paper accepted at the ICML 2026 SPIGM Workshop.
-
-          - Developing a constraint-aware version of PIFM using primal-dual guidance during inference."
-      - label: Undergraduate Researcher, Trust & Responsibility Summer Research Program
-        details: "**Rice University** · May 2026–present
-
-
-          Advisor: Prof. César A. Uribe
-
-
-          - Developing an occupation translator using task representations, clustering, and fused Gromov-Wasserstein comparisons to align occupational taxonomies.
-
-          - Built an extraction and embedding pipeline for O*NET releases and ESCO/ISCO taxonomies to examine splits, merges, task reorganization, and ambiguous
-          matches."
-    Publications:
-      - title: Prior-Informed Flow Matching for Graph Reconstruction
-        authors:
-          - Harvey Chen
-          - Nicolas Zilberstein
-          - Santiago Segarra
-        publisher: ICML 2026 Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM)
-        releaseDate: "2026"
-        url: https://arxiv.org/abs/2601.22107
-        summary: Accepted workshop paper. Code available at github.com/HC-SGW/PIFM.
-    Presentations:
-      - label: Prior-Informed Flow Matching for Graph Reconstruction
-        details: October 18, 2025 · Oral presentation, Gulf Coast Undergraduate Research Symposium (GCURS), Rice University, Houston, Texas.
-    Teaching Experience:
-      - label: Teaching Assistant
-        details: "**Rice University, Department of Electrical and Computer Engineering** · Spring 2026–present
-
-
-          - ELEC 241: Fundamentals of Electrical Engineering I (Fall 2026).
-
-          - ELEC 242: Signals, Systems, and Transforms (Spring 2026).
-
-          - ELEC 378: Machine Learning: Concepts and Techniques (Spring 2026)."
-    Honors and Awards:
-      - title: Louise J. Walsh Scholarship
-        awarder: Rice School of Engineering
-        date: 2025–2026
-        summary: Merit award based on academic record.
-      - title: President's Honor Roll
-        awarder: Rice University
-        date: Fall 2023; Spring 2025
-      - title: IEEE–Eta Kappa Nu
-        awarder: Theta Rho Chapter
-        date: "2026"
-        summary: Inducted into the electrical and computer engineering honor society.
-    Mentoring and Service:
-      - label: Mentor
-        details: "**Rice Catalyst Eureka Outreach Program** · November 2024–present
-
-
-          Mentor Houston-area high-school students on research design, literature reviews, technical writing, and oral presentations; advise submissions to
-          the Rice Eureka research journal."
-    Projects:
-      - name: NeuralSeed Real-Time Guitar Pedal
-        date: Spring 2026
-        url: https://github.com/TonyTheBaloney/ELEC327_FinalProject
-        summary: Integrated an RTNeural GRU model into C++ firmware on a Daisy Seed embedded audio platform for real-time neural amplifier and effects processing.
-        highlights:
-          - Ported machine-learning and signal-processing components and developed the team demonstration website.
-      - name: Speech Emotion Classification
-        date: Spring 2025
-        summary:
-          Built and evaluated a model for emotion classification from short voice clips. The team achieved the highest classification accuracy among
-          course groups.
-    Skills:
-      - name: Programming
-        keywords:
-          - Python
-          - Java
-          - Go
-          - HTML/CSS
-          - TypeScript
-          - C#
-          - C
-      - name: Machine Learning and Data
-        keywords:
-          - PyTorch
-          - PyTorch Geometric
-          - scikit-learn
-          - NumPy
-          - pandas
-          - SciPy
-          - NetworkX
-          - POT
-          - Matplotlib
-      - name: Tools
-        keywords:
-          - Git
-          - Linux
-          - LaTeX
+  email: hc80@rice.edu
+  education:
+    - institution: Rice University
+      degree: B.S. in Electrical and Computer Engineering
+      date: Expected May 2027
+      gpa: 3.98 / 4.00
+      coursework: "Honors Linear Algebra; Machine Learning: Concepts and Techniques; Introduction to Computer Vision; Learning from Sensor Data; Random Signals; Learning-Based Control (graduate, in progress)."
+  research:
+    - role: Research Assistant
+      institution: Rice University
+      advisor: Prof. Santiago Segarra
+      date: May 2025–present
+      highlights:
+        - Developed PIFM for graph reconstruction, maintained its PyTorch codebase, and led experiments, analysis, figures, and writing for a first-author ICML 2026 SPIGM Workshop paper.
+        - Developing constraint-aware PIFM with primal–dual guidance during inference.
+    - role: Undergraduate Researcher
+      institution: Rice University
+      program: Trust & Responsibility Summer Research Program
+      advisor: Prof. César A. Uribe
+      date: May 2026–present
+      highlights:
+        - Developing an occupation translator using task representations and fused Gromov–Wasserstein comparisons to align occupational taxonomies.
+        - Built an extraction and embedding pipeline for O*NET and ESCO/ISCO to study occupation splits, merges, task reorganization, and ambiguous matches.
+  publications:
+    - title: Prior-Informed Flow Matching for Graph Reconstruction
+      authors: Harvey Chen, Nicolas Zilberstein, and Santiago Segarra
+      venue: ICML 2026 Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM)
+      url: https://arxiv.org/abs/2601.22107
+      code: https://github.com/HC-SGW/PIFM
+  presentations:
+    - title: Prior-Informed Flow Matching for Graph Reconstruction
+      event: Gulf Coast Undergraduate Research Symposium (GCURS), Rice University
+      format: Oral presentation
+      date: October 18, 2025
+  teaching:
+    institution: Rice University, Electrical and Computer Engineering
+    role: Teaching Assistant
+    courses:
+      - code: ELEC 241
+        title: Fundamentals of Electrical Engineering I
+        term: Fall 2026
+      - code: ELEC 242
+        title: Signals, Systems, and Transforms
+        term: Spring 2026
+      - code: ELEC 378
+        title: "Machine Learning: Concepts and Techniques"
+        term: Spring 2026
+  awards:
+    - title: Louise J. Walsh Scholarship
+      institution: Rice School of Engineering
+      date: 2025–2026
+    - title: President's Honor Roll
+      institution: Rice University
+      date: Fall 2023; Spring 2025
+    - title: IEEE–Eta Kappa Nu
+      institution: Theta Rho Chapter · Engineering honor society
+      date: Inducted 2026
+  service:
+    - role: Outreach Mentor
+      organization: Rice Catalyst Eureka Outreach Program
+      date: November 2024–present
+      summary: Mentor Houston-area high-school students on research design, literature reviews, technical writing, and presentations; advise submissions to the Rice Eureka research journal.
+  projects:
+    - title: NeuralSeed Real-Time Guitar Pedal
+      date: Spring 2026
+      url: https://github.com/TonyTheBaloney/ELEC327_FinalProject
+      summary: Integrated an RTNeural GRU model into C++ firmware on a Daisy Seed audio platform, ported signal-processing components, and built the team demonstration website.
+    - title: Speech Emotion Classification
+      date: Spring 2025
+      summary: Built and evaluated a model to classify emotions from voice clips. The team achieved the highest classification accuracy among course groups.
+  skills:
+    - area: Programming
+      items: Python, Java, Go, HTML/CSS, TypeScript, C#, C
+    - area: ML & data
+      items: PyTorch, PyTorch Geometric, scikit-learn, NumPy, pandas, SciPy, NetworkX, POT, Matplotlib
+    - area: Tools
+      items: Git, Linux, LaTeX

@@ -18,8 +18,13 @@ Built from [al-folio](https://github.com/alshedivat/al-folio), using its version
 | Downloadable public CV              | `assets/pdf/Haoming_Harvey_Chen_CV.pdf` |
 | Email and professional profiles     | `_data/socials.yml`                     |
 | Site settings                       | `_config.yml`                           |
+| Site typography and spacing         | `assets/css/site.css`                   |
 
 Keep the online CV and downloadable PDF in sync when updating academic details. Publish only the public CV copy; source application documents and transcripts are not site assets. Preserve the distinction between workshop publications and unpublished research.
+
+The online CV uses structured entries in `_data/cv.yml` and a concise layout in `_pages/cv.md`; the PDF retains the complete detail. The homepage has a compact featured-publication entry in `_pages/about.md`, so update it alongside the bibliography when changing that paper.
+
+`_layouts/default.liquid` is a small, intentional override of al-folio's base layout. It loads the site stylesheet, adds page-specific classes, and provides a keyboard skip link and semantic main content. Its upstream version is recorded in `.al-folio-overrides.yml`; run `bundle exec al-folio upgrade overrides audit` after theme updates.
 
 The site currently works without a portrait. To add one, place your photo in `assets/img/` and replace `profile: false` in `_pages/about.md` with:
 

@@ -29,4 +29,4 @@ Task-based occupation ranking and interpretable task correspondences across occu
 
 [Read about Occupation Translator →]({{ '/research/#the-occupation-translator-task-based-alignment-of-occupational-taxonomies' | relative_url }})
 
-<script defer src="{{ '/assets/js/publication-controls.js' | relative_url }}"></script>
+<script defer src="{{ '/assets/js/publication-controls.js' | relative_url | bust_file_cache }}"></script>

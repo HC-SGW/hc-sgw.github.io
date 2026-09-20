@@ -12,7 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
     trigger.setAttribute("aria-controls", panel.id);
     trigger.setAttribute("aria-label", kind === "abstract" ? "Toggle publication abstract" : "Toggle BibTeX citation");
 
-    const syncState = () => trigger.setAttribute("aria-expanded", String(panel.classList.contains("open")));
+    panel.querySelectorAll("pre").forEach((code) => {
+      code.tabIndex = 0;
+      code.setAttribute("role", "region");
+      code.setAttribute("aria-label", "BibTeX citation");
+    });
+
+    const syncState = () => {
+      const isOpen = panel.classList.contains("open");
+      trigger.setAttribute("aria-expanded", String(isOpen));
+      panel.setAttribute("aria-hidden", String(!isOpen));
+      panel.inert = !isOpen;
+    };
     syncState();
     new MutationObserver(syncState).observe(panel, { attributes: true, attributeFilter: ["class"] });
 
