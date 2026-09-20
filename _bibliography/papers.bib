@@ -1,0 +1,14 @@
+@inproceedings{chen2026pifm,
+  title = {Prior-Informed Flow Matching for Graph Reconstruction},
+  author = {Chen, Harvey and Zilberstein, Nicolas and Segarra, Santiago},
+  booktitle = {ICML Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM)},
+  year = {2026},
+  abbr = {SPIGM},
+  arxiv = {2601.22107},
+  pdf = {https://arxiv.org/pdf/2601.22107},
+  code = {https://github.com/HC-SGW/PIFM},
+  website = {https://spigmworkshop2026.github.io/},
+  selected = {true},
+  bibtex_show = {true},
+  abstract = {We introduce Prior-Informed Flow Matching (PIFM), a conditional flow model for graph reconstruction. Reconstructing graphs from partial observations remains a key challenge; classical embedding methods often lack global consistency, while modern generative models struggle to incorporate structural priors. PIFM bridges this gap by integrating embedding-based priors with continuous-time flow matching. Grounded in a permutation equivariant version of the distortion-perception theory, our method first uses a prior, such as GraphSAGE or node2vec, to form an informed initial estimate of the adjacency matrix based on local information. It then applies rectified flow matching to refine this estimate, transporting it toward the true distribution of clean graphs and learning a global coupling. Experiments on different datasets demonstrate that PIFM consistently enhances classical embeddings, outperforming them and state-of-the-art generative baselines in reconstruction accuracy.}
+}
