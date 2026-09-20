@@ -1,10 +1,12 @@
 ---
-layout: about
+layout: home
 title: About
 permalink: /
 body_class: home-page
 subtitle: Undergraduate researcher · <a href="https://www.rice.edu/">Rice University</a>
-profile: false
+profile:
+  image: portrait-placeholder.svg
+  alt: Portrait placeholder
 selected_papers: false
 social: false
 announcements:
