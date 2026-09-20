@@ -11,7 +11,7 @@ nav_order: 3
 {% assign cv = site.data.cv.cv %}
 
 <div class="cv-toolbar">
-  <p>{{ cv.location }} · <a href="mailto:{{ cv.email }}">{{ cv.email }}</a></p>
+  <p>{{ cv.location }} · <a href="mailto:{{ cv.email }}">{{ cv.email }}</a> · <a href="{{ "/" | relative_url }}">hc-sgw.github.io</a></p>
   <a class="cv-download" href="{{ '/assets/pdf/Haoming_Harvey_Chen_CV.pdf' | relative_url }}">Download full CV (PDF) <span aria-hidden="true">↓</span></a>
 </div>
 
