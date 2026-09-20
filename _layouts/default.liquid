@@ -16,7 +16,7 @@
     lang="{{ site.lang }}"
   {%- endif -%}
 {%- endcapture -%}
-<html {{ html_attributes }} data-theme="dark" data-theme-setting="dark">
+<html {{ html_attributes }}>
   <!-- Head -->
   <head>
     {% if page.redirect %}
@@ -30,8 +30,6 @@
       <meta http-equiv="refresh" content="3; url={{ redirect }}">
     {% endif %}
     {% include head.liquid %}
-    <meta name="color-scheme" content="dark">
-    <link rel="stylesheet" href="{{ "/assets/css/jekyll-pygments-themes-native.css" | relative_url | bust_file_cache }}">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url | bust_file_cache }}">
   </head>
 

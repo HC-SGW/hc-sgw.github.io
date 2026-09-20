@@ -1,16 +1,17 @@
 /* Site-specific spacing and typography over the al-folio theme. */
 :root {
+  color-scheme: light;
   --site-muted: #60656b;
   --site-rule: #e3e5e8;
   --site-accent: #8b1688;
 }
 html[data-theme="dark"] {
+  color-scheme: dark;
   --site-muted: #b0b5bb;
   --site-rule: #3b3e43;
   --site-accent: #65c7de;
 }
 html {
-  color-scheme: dark;
   scroll-padding-top: 6rem;
 }
 body {
@@ -109,6 +110,9 @@ main.container {
 .post article details p {
   margin-top: 1rem;
 }
+.navbar {
+  opacity: 1;
+}
 .navbar .nav-link {
   min-height: 44px;
   display: inline-flex;
@@ -118,6 +122,23 @@ main.container {
 .navbar-toggler {
   min-width: 44px;
   min-height: 44px;
+}
+/* Center the theme icon on the same 44px row as the navigation links. */
+.navbar .toggle-container {
+  display: flex;
+  align-items: center;
+}
+.navbar #light-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  transform: none;
+  line-height: 1;
+}
+.navbar #light-toggle i {
+  line-height: 1;
 }
 .home-page .post {
   max-width: 760px;
@@ -412,6 +433,9 @@ footer.sticky-bottom {
   }
 }
 @media (max-width: 575px) {
+  .navbar #light-toggle {
+    justify-content: flex-start;
+  }
   .navbar .container {
     padding-inline: 1.25rem;
   }
