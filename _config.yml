@@ -9,8 +9,8 @@ footer_text:
   Pages</a>.
 keywords: Haoming Chen, Harvey Chen, Rice University, generative modeling, flow matching, diffusion models, graph reconstruction
 lang: en
-icon: favicon.png
-apple_touch_icon: null
+icon: favicon.svg
+apple_touch_icon: favicon.png
 url: https://hc-sgw.github.io
 baseurl: ""
 last_updated: false

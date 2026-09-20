@@ -14,10 +14,8 @@ My research interests center on generative modeling, particularly flow matching 
 **PIFM · ICML 2026 SPIGM Workshop**
 
 <figure class="research-figure">
-  <a href="{{ '/assets/pdf/pifm-pipeline.pdf' | relative_url }}" aria-label="View full-size PIFM diagram (PDF)">
-    <img src="{{ '/assets/img/pifm-pipeline.png' | relative_url }}" alt="PIFM combines a partially observed graph with a local prior, then transports the initial estimate through a learned flow toward a reconstructed graph." width="1686" height="761" loading="lazy" decoding="async">
-  </a>
-  <figcaption>PIFM: from partial observations and a local prior to a reconstructed graph. <a href="{{ '/assets/pdf/pifm-pipeline.pdf' | relative_url }}">View full-size PDF</a>.</figcaption>
+  <img src="{{ '/assets/img/pifm-pipeline.png' | relative_url }}" alt="PIFM combines a partially observed graph with a local prior, then transports the initial estimate through a learned flow toward a reconstructed graph." width="1686" height="761" loading="lazy" decoding="async">
+  <figcaption>PIFM: from partial observations and a local prior to a reconstructed graph.</figcaption>
 </figure>
 
 Reconstructing a graph from partial observations requires both local evidence and an understanding of its overall structure. PIFM combines local structural estimates with flow matching, transporting an informed initial estimate toward the distribution of complete graphs and capturing dependencies beyond individual edge predictions.
@@ -31,6 +29,11 @@ Working with Nicolas Zilberstein and Santiago Segarra, I developed the research 
 ## Feasible Flow Matching for Graph Reconstruction via Within-Sampling Primal-Dual Guidance
 
 **CPD-PIFM · Unpublished research**
+
+<figure class="research-figure">
+  <img src="{{ '/assets/img/cpd-pifm-overview.png' | relative_url }}" alt="CPD-PIFM initializes missing graph entries from a prior and noise, then combines pretrained PIFM velocity with adaptive constraint guidance. Each step predicts an endpoint, evaluates constraint slack, and updates constraint weights. Observed entries and model weights remain fixed." width="2088" height="1152" loading="lazy" decoding="async">
+  <figcaption>CPD-PIFM adds adaptive constraint guidance during sampling, keeping observed entries fixed without retraining.</figcaption>
+</figure>
 
 Graph reconstruction often comes with structural requirements, such as degree bounds, triangle counts, or a sparsity band. Constrained Primal-Dual PIFM incorporates these requirements through adaptive Lagrange multipliers that guide sampling without retraining.
 
@@ -48,10 +51,8 @@ The method preserves PIFM's permutation equivariance, provides a bound on expect
 **Occupation Translator · Unpublished research**
 
 <figure class="research-figure">
-  <a href="{{ '/assets/pdf/occupation-translator-overview.pdf' | relative_url }}" aria-label="View full-size Occupation Translator diagram (PDF)">
-    <img src="{{ '/assets/img/occupation-translator-overview.png' | relative_url }}" alt="Source and candidate occupation profiles enter a task comparison algorithm, which returns ranked candidates and task correspondences for a selected pair. Recorded crosswalk links provide a reference; confidence scores are available where a model is fitted." width="980" height="519" loading="lazy" decoding="async">
-  </a>
-  <figcaption>The Occupation Translator ranks candidate matches and shows task correspondences for selected pairs. <a href="{{ '/assets/pdf/occupation-translator-overview.pdf' | relative_url }}">View full-size PDF</a>.</figcaption>
+  <img src="{{ '/assets/img/occupation-translator-overview.png' | relative_url }}" alt="Source and candidate occupation profiles enter a task comparison algorithm, which returns ranked candidates and task correspondences for a selected pair. Recorded crosswalk links provide a reference; confidence scores are available where a model is fitted." width="980" height="519" loading="lazy" decoding="async">
+  <figcaption>The Occupation Translator ranks candidate matches and shows task correspondences for selected pairs.</figcaption>
 </figure>
 
 Occupational classification systems describe work differently across countries and over time. This project ranks candidate occupation matches using task descriptions and produces task-level correspondences that explain selected matches. It compares text-based methods with approaches incorporating task-network structure through fused Gromov–Wasserstein comparisons.
