@@ -34,7 +34,12 @@ nav_order: 3
         <div class="cv-entry-heading"><h3>{{ entry.institution }}</h3><span class="cv-date">{{ entry.date }}</span></div>
         <p>{{ entry.degree }}</p>
         <p class="cv-affiliation">GPA: {{ entry.gpa }}</p>
-        <details><summary>Selected coursework</summary><p>{{ entry.coursework }}</p></details>
+        <details>
+          <summary>Selected coursework</summary>
+          <ul>
+            {% for course in entry.coursework %}<li>{{ course }}</li>{% endfor %}
+          </ul>
+        </details>
       </div>
       {% endfor %}
     </section>

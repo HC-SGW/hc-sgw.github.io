@@ -7,7 +7,12 @@ cv:
       degree: B.S. in Electrical and Computer Engineering
       date: Expected May 2027
       gpa: 3.98 / 4.00
-      coursework: "Honors Linear Algebra; Machine Learning: Concepts and Techniques; Introduction to Computer Vision; Learning from Sensor Data; Random Signals."
+      coursework:
+        - Honors Linear Algebra
+        - "Machine Learning: Concepts and Techniques"
+        - Introduction to Computer Vision
+        - Learning from Sensor Data
+        - Random Signals
   research:
     - role: Research Assistant
       institution: Rice University
