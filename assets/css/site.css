@@ -88,6 +88,14 @@ main.container {
   margin-top: 3rem;
   margin-bottom: 1.25rem;
 }
+/* Page section titles (Research, Publications); CV and homepage headings sit inside sections. */
+.post article > h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding-left: 1rem;
+  border-left: 3px solid var(--site-accent);
+}
 .post article h3 {
   font-size: 1.2rem;
   font-weight: 500;
@@ -173,6 +181,90 @@ main.container {
 .publication-authors,
 .publication-venue {
   color: var(--site-muted);
+}
+.paper-authors {
+  margin: -0.5rem 0 0.35rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--site-muted);
+}
+.paper-authors .author-self {
+  font-weight: 600;
+}
+.paper-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9375rem;
+  color: var(--site-muted);
+}
+.post article > .paper-meta {
+  margin-bottom: 1.5rem;
+}
+.paper-status {
+  padding: 0.05rem 0.55rem;
+  border: 1px solid var(--site-rule);
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  color: var(--global-text-color);
+}
+.paper-status.is-published {
+  border-color: var(--site-accent);
+  color: var(--site-accent);
+}
+.research-overview {
+  margin: 2rem 0 0.5rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--site-rule);
+  border-radius: 0.35rem;
+}
+.research-count {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--site-muted);
+}
+.research-count strong {
+  color: var(--global-text-color);
+  font-weight: 600;
+}
+.jump-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.jump-links a,
+.paper-actions a,
+.copy-bibtex {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--site-rule);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.jump-links a:hover,
+.paper-actions a:hover,
+.copy-bibtex:hover {
+  border-color: var(--site-accent);
+  text-decoration: none;
+}
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.copy-bibtex {
+  margin-bottom: 0.5rem;
+  background: var(--global-bg-color);
+  color: var(--site-accent);
+  cursor: pointer;
 }
 .home-page .featured-publication {
   margin-top: 3rem;
@@ -396,6 +488,10 @@ footer.sticky-bottom {
   }
   .post-header {
     margin-bottom: 2rem;
+  }
+  .post article > h2 {
+    font-size: 1.35rem;
+    padding-left: 0.75rem;
   }
   .cv-layout {
     display: block;

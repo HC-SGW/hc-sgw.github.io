@@ -18,6 +18,23 @@ document.addEventListener("DOMContentLoaded", () => {
       code.setAttribute("aria-label", "BibTeX citation");
     });
 
+    if (kind === "bibtex" && navigator.clipboard) {
+      const copyButton = document.createElement("button");
+      copyButton.type = "button";
+      copyButton.className = "copy-bibtex";
+      copyButton.textContent = "Copy BibTeX";
+      copyButton.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(panel.querySelector("pre")?.textContent.trim() ?? "");
+          copyButton.textContent = "Copied";
+        } catch {
+          copyButton.textContent = "Copy failed";
+        }
+        setTimeout(() => (copyButton.textContent = "Copy BibTeX"), 2000);
+      });
+      panel.prepend(copyButton);
+    }
+
     const syncState = () => {
       const isOpen = panel.classList.contains("open");
       trigger.setAttribute("aria-expanded", String(isOpen));

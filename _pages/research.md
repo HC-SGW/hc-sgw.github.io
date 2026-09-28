@@ -9,9 +9,21 @@ nav_order: 1
 
 My research interests center on generative modeling, particularly flow matching and diffusion models. My current work explores graph reconstruction from partial observations, incorporating structural constraints during sampling, and task-based comparisons across occupational taxonomies.
 
-## Prior-Informed Flow Matching for Graph Reconstruction
+{% capture publication_count %}{% bibliography_count %}{% endcapture %}
+{%- assign publication_count = publication_count | strip -%}
+<nav class="research-overview" aria-label="Papers on this page">
+  <p class="research-count"><strong>{{ publication_count }}</strong> {% if publication_count == '1' %}publication{% else %}publications{% endif %} · <strong>2</strong> papers in preparation</p>
+  <ul class="jump-links">
+    <li><a href="#pifm">PIFM</a></li>
+    <li><a href="#cpd-pifm">CPD-PIFM</a></li>
+    <li><a href="#occupation-translator">Occupation Translator</a></li>
+  </ul>
+</nav>
 
-**PIFM · ICML 2026 SPIGM Workshop**
+## Prior-Informed Flow Matching for Graph Reconstruction {#pifm}
+
+{% include author-list.liquid authors="chen,zilberstein,segarra" %}
+<p class="paper-meta"><span class="paper-status is-published">Published</span> PIFM · ICML 2026 SPIGM Workshop</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/pifm-pipeline.png' | relative_url }}" alt="PIFM combines a partially observed graph with a local prior, then transports the initial estimate through a learned flow toward a reconstructed graph." width="1686" height="761" loading="lazy" decoding="async">
@@ -20,15 +32,21 @@ My research interests center on generative modeling, particularly flow matching 
 
 Reconstructing a graph from partial observations requires both local evidence and an understanding of its overall structure. PIFM combines local structural estimates with flow matching, transporting an informed initial estimate toward the distribution of complete graphs and capturing dependencies beyond individual edge predictions.
 
-Working with Nicolas Zilberstein and Santiago Segarra, I developed the research codebase and led experiments, analysis, figure preparation, and writing for the workshop paper, on which I am the first author.
+Working with Dr. Nicolas Zilberstein and Prof. Santiago Segarra, I developed the research codebase and led experiments, analysis, figure preparation, and writing for the workshop paper, on which I am the first author.
 
-[Paper](https://arxiv.org/abs/2601.22107) · [Code](https://github.com/HC-SGW/PIFM) · [Publication details]({{ '/publications/' | relative_url }})
+<nav class="paper-actions" aria-label="PIFM links">
+  <a href="https://arxiv.org/abs/2601.22107">Paper</a>
+  <a href="https://arxiv.org/pdf/2601.22107">PDF</a>
+  <a href="https://github.com/HC-SGW/PIFM">Code</a>
+  <a href="{{ '/publications/#chen2026pifm' | relative_url }}">Cite</a>
+</nav>
 
 ---
 
-## Feasible Flow Matching for Graph Reconstruction via Within-Sampling Primal-Dual Guidance
+## Feasible Flow Matching for Graph Reconstruction via Within-Sampling Primal-Dual Guidance {#cpd-pifm}
 
-**CPD-PIFM · Unpublished research**
+{% include author-list.liquid authors="chen,zilberstein,paternain,segarra" %}
+<p class="paper-meta"><span class="paper-status">In preparation</span> CPD-PIFM</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/cpd-pifm-overview.png' | relative_url }}" alt="CPD-PIFM initializes missing graph entries from a prior and noise, then combines pretrained PIFM velocity with adaptive constraint guidance. Each step predicts an endpoint, evaluates constraint slack, and updates constraint weights. Observed entries and model weights remain fixed." width="2088" height="1152" loading="lazy" decoding="async">
@@ -46,9 +64,10 @@ The method preserves PIFM's permutation equivariance, provides a bound on expect
 
 ---
 
-## The Occupation Translator: Task-Based Alignment of Occupational Taxonomies
+## The Occupation Translator: Task-Based Alignment of Occupational Taxonomies {#occupation-translator}
 
-**Occupation Translator · Unpublished research**
+{% include author-list.liquid authors="chen,xu,loaiza,uribe" %}
+<p class="paper-meta"><span class="paper-status">In preparation</span> Occupation Translator</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/occupation-translator-overview.png' | relative_url }}" alt="Source and candidate occupation profiles enter a task comparison algorithm, which returns ranked candidates and task correspondences for a selected pair. Recorded crosswalk links provide a reference; confidence scores are available where a model is fitted." width="980" height="519" loading="lazy" decoding="async">

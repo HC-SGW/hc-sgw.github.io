@@ -31,7 +31,7 @@ I work with [Prof. Santiago Segarra](https://scholar.google.com/citations?user=O
 <section class="featured-publication" aria-labelledby="selected-publication">
   <h2 id="selected-publication">Selected publication</h2>
   <h3><a href="https://arxiv.org/abs/2601.22107">Prior-Informed Flow Matching for Graph Reconstruction</a></h3>
-  <p class="publication-authors">Harvey Chen, Nicolas Zilberstein, and Santiago Segarra</p>
+  {% include author-list.liquid authors="chen,zilberstein,segarra" %}
   <p class="publication-venue">ICML 2026 · SPIGM Workshop</p>
   <nav class="publication-links" aria-label="Featured publication links">
     <a href="https://arxiv.org/abs/2601.22107">Paper</a>

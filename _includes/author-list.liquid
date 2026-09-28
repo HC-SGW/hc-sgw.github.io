@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders an ordered, linked author line from _data/coauthors.yml.
+  Usage: {% include author-list.liquid authors="chen,zilberstein,segarra" %}
+{%- endcomment -%}
+{%- assign author_keys = include.authors | split: ',' -%}
+<p class="paper-authors">
+  {%- for key in author_keys -%}
+    {%- assign person = site.data.coauthors[key] | first -%}
+    {%- unless forloop.first %}, {% endunless -%}
+    <a href="{{ person.url }}" {% if person.self %}class="author-self"{% endif %}>
+      {{- person.name -}}
+    </a>
+  {%- endfor -%}
+</p>

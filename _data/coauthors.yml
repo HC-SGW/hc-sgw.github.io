@@ -1,1 +1,38 @@
-{}
+# Author profiles, keyed by lowercase last name.
+# al-folio reads `firstname` and `url` to link co-authors on the Publications page.
+# _includes/author-list.liquid reads `name` and `url` for author lines elsewhere.
+chen:
+  - firstname: ["Harvey", "Haoming", "H."]
+    name: Haoming (Harvey) Chen
+    url: https://scholar.google.com/citations?user=PmD3rcMAAAAJ
+    self: true
+
+zilberstein:
+  - firstname: ["Nicolas", "N."]
+    name: Nicolas Zilberstein
+    url: https://scholar.google.com/citations?user=nXRpGgkAAAAJ
+
+paternain:
+  - firstname: ["Santiago", "S."]
+    name: Santiago Paternain
+    url: https://scholar.google.com/citations?user=9Y1ls-EAAAAJ
+
+segarra:
+  - firstname: ["Santiago", "S."]
+    name: Santiago Segarra
+    url: https://scholar.google.com/citations?user=O1aSMXQAAAAJ
+
+xu:
+  - firstname: ["Yifan", "Y."]
+    name: Yifan Xu
+    url: https://scholar.google.com/citations?user=0OeQgPIAAAAJ
+
+loaiza:
+  - firstname: ["Isabella", "I."]
+    name: Isabella Loaiza
+    url: https://scholar.google.com/citations?user=ZAka3t2dIxUC
+
+uribe:
+  - firstname: ["César A.", "Cesar A.", "César", "C. A."]
+    name: César A. Uribe
+    url: https://scholar.google.com/citations?user=b_uG-kEAAAAJ
