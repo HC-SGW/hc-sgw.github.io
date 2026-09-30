@@ -12,7 +12,7 @@ My research interests center on generative modeling, particularly flow matching 
 {% capture publication_count %}{% bibliography_count %}{% endcapture %}
 {%- assign publication_count = publication_count | strip -%}
 <nav class="research-overview" aria-label="Papers on this page">
-  <p class="research-count"><strong>{{ publication_count }}</strong> {% if publication_count == '1' %}publication{% else %}publications{% endif %} · <strong>2</strong> papers in preparation</p>
+  <p class="research-count"><strong>{{ publication_count }}</strong> {% if publication_count == '1' %}publication{% else %}publications{% endif %} · <strong>1</strong> preprint · <strong>1</strong> paper in preparation</p>
   <ul class="jump-links">
     <li><a href="#pifm">PIFM</a></li>
     <li><a href="#cpd-pifm">CPD-PIFM</a></li>
@@ -23,7 +23,7 @@ My research interests center on generative modeling, particularly flow matching 
 ## Prior-Informed Flow Matching for Graph Reconstruction {#pifm}
 
 {% include author-list.liquid authors="chen,zilberstein,segarra" %}
-<p class="paper-meta"><span class="paper-status is-published">Published</span> PIFM · ICML 2026 SPIGM Workshop</p>
+<p class="paper-meta"><span class="paper-status is-published">Accepted</span> PIFM · TMLR (to appear) · Earlier version at ICML 2026 SPIGM Workshop</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/pifm-pipeline.png' | relative_url }}" alt="PIFM combines a partially observed graph with a local prior, then transports the initial estimate through a learned flow toward a reconstructed graph." width="1686" height="761" loading="lazy" decoding="async">
@@ -32,7 +32,7 @@ My research interests center on generative modeling, particularly flow matching 
 
 Reconstructing a graph from partial observations requires both local evidence and an understanding of its overall structure. PIFM combines local structural estimates with flow matching, transporting an informed initial estimate toward the distribution of complete graphs and capturing dependencies beyond individual edge predictions.
 
-Working with Dr. Nicolas Zilberstein and Prof. Santiago Segarra, I developed the research codebase and led experiments, analysis, figure preparation, and writing for the workshop paper, on which I am the first author.
+Working with Dr. Nicolas Zilberstein and Prof. Santiago Segarra, I developed the research codebase and led experiments, analysis, figure preparation, and writing for the paper, on which I am the first author.
 
 <nav class="paper-actions" aria-label="PIFM links">
   <a href="https://arxiv.org/abs/2601.22107">Paper</a>
@@ -46,7 +46,7 @@ Working with Dr. Nicolas Zilberstein and Prof. Santiago Segarra, I developed the
 ## Feasible Flow Matching for Graph Reconstruction via Within-Sampling Primal-Dual Guidance {#cpd-pifm}
 
 {% include author-list.liquid authors="chen,zilberstein,paternain,segarra" %}
-<p class="paper-meta"><span class="paper-status">In preparation</span> CPD-PIFM</p>
+<p class="paper-meta"><span class="paper-status">Preprint</span> CPD-PIFM · arXiv</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/cpd-pifm-overview.png' | relative_url }}" alt="CPD-PIFM initializes missing graph entries from a prior and noise, then combines pretrained PIFM velocity with adaptive constraint guidance. Each step predicts an endpoint, evaluates constraint slack, and updates constraint weights. Observed entries and model weights remain fixed." width="2088" height="1152" loading="lazy" decoding="async">
@@ -61,6 +61,11 @@ The method preserves PIFM's permutation equivariance, provides a bound on expect
 <summary>Read the abstract</summary>
 <p>Graph reconstruction from partial observations often comes with structural side information, such as degree bounds, triangle counts, or a sparsity band. Prior-Informed Flow Matching (PIFM) reconstructs graphs by transporting a local prior toward the graph distribution, but it provides no mechanism to incorporate this side information. We put forth Constrained Primal-Dual PIFM (CPD-PIFM), which augments the sampler with Lagrange multipliers that evolve along each trajectory. The multipliers respond to constraint violations at a predicted endpoint and guide subsequent sampling steps without retraining. We prove that the sampler inherits PIFM's permutation equivariance and bound its expected terminal slack by a term that decays as the inverse square root of the number of steps, plus two approximation terms. On three link-prediction benchmarks and nine combinations of datasets and constraints, CPD-PIFM raises feasibility by 11%–26% and remains competitive with fixed-weight guidance without selecting a separate multiplier for each constraint.</p>
 </details>
+
+<nav class="paper-actions" aria-label="CPD-PIFM links">
+  <a href="https://arxiv.org/abs/2609.32980">Paper</a>
+  <a href="https://arxiv.org/pdf/2609.32980">PDF</a>
+</nav>
 
 ---
 

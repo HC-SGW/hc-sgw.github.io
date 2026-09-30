@@ -63,7 +63,7 @@ nav_order: 3
         <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
         <p>{{ entry.authors }}</p>
         <p class="cv-affiliation">{{ entry.venue }}</p>
-        <nav class="publication-links" aria-label="Publication links"><a href="{{ entry.url }}">Paper</a><a href="{{ entry.code }}">Code</a><a href="{{ '/publications/' | relative_url }}">All publications</a></nav>
+        <nav class="publication-links" aria-label="Publication links"><a href="{{ entry.url }}">Paper</a>{% if entry.code %}<a href="{{ entry.code }}">Code</a>{% endif %}<a href="{{ '/publications/' | relative_url }}">All publications</a></nav>
       </div>
       {% endfor %}
       {% for entry in cv.presentations %}

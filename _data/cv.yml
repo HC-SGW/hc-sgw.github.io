@@ -19,8 +19,8 @@ cv:
       advisor: Prof. Santiago Segarra
       date: May 2025–present
       highlights:
-        - Developed PIFM for graph reconstruction, maintained its PyTorch codebase, and led experiments, analysis, figures, and writing for a first-author ICML 2026 SPIGM Workshop paper.
-        - Developing constraint-aware PIFM with primal–dual guidance during inference.
+        - Developed PIFM for graph reconstruction, maintained its PyTorch codebase, and led experiments, analysis, figures, and writing for a first-author paper accepted at TMLR.
+        - Developed constraint-aware PIFM with primal–dual guidance during inference (arXiv preprint).
     - role: Undergraduate Researcher
       institution: Rice University
       program: Trust & Responsibility Summer Research Program
@@ -32,9 +32,13 @@ cv:
   publications:
     - title: Prior-Informed Flow Matching for Graph Reconstruction
       authors: Harvey Chen, Nicolas Zilberstein, and Santiago Segarra
-      venue: ICML 2026 Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM)
+      venue: Transactions on Machine Learning Research (TMLR), to appear. Earlier version at the ICML 2026 Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM).
       url: https://arxiv.org/abs/2601.22107
       code: https://github.com/HC-SGW/PIFM
+    - title: Feasible Flow Matching for Graph Reconstruction via Within-Sampling Primal-Dual Guidance
+      authors: Harvey Chen, Nicolas Zilberstein, Santiago Paternain, and Santiago Segarra
+      venue: arXiv preprint arXiv:2609.32980
+      url: https://arxiv.org/abs/2609.32980
   presentations:
     - title: Prior-Informed Flow Matching for Graph Reconstruction
       event: Gulf Coast Undergraduate Research Symposium (GCURS), Rice University
