@@ -23,7 +23,7 @@ My research interests center on generative modeling, particularly flow matching 
 ## Prior-Informed Flow Matching for Graph Reconstruction {#pifm}
 
 {% include author-list.liquid authors="chen,zilberstein,segarra" %}
-<p class="paper-meta"><span class="paper-status is-published">Published</span> PIFM · TMLR 2026 · Earlier version at ICML 2026 SPIGM Workshop</p>
+<p class="paper-meta"><span class="paper-status is-published">Published</span> PIFM · TMLR 2026</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/pifm-pipeline.png' | relative_url }}" alt="PIFM combines a partially observed graph with a local prior, then transports the initial estimate through a learned flow toward a reconstructed graph." width="1686" height="761" loading="lazy" decoding="async">

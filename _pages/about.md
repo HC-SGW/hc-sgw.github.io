@@ -32,7 +32,7 @@ I work with [Prof. Santiago Segarra](https://scholar.google.com/citations?user=O
   <h2 id="selected-publication">Selected publication</h2>
   <h3><a href="https://openreview.net/forum?id=9sEWrLXGPp">Prior-Informed Flow Matching for Graph Reconstruction</a></h3>
   {% include author-list.liquid authors="chen,zilberstein,segarra" %}
-  <p class="publication-venue">TMLR 2026 · Earlier version at ICML 2026 SPIGM Workshop</p>
+  <p class="publication-venue">Transactions on Machine Learning Research (TMLR), 2026</p>
   <nav class="publication-links" aria-label="Featured publication links">
     <a href="https://openreview.net/forum?id=9sEWrLXGPp">Paper</a>
     <a href="https://github.com/HC-SGW/PIFM">Code</a>

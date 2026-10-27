@@ -32,7 +32,7 @@ cv:
   publications:
     - title: Prior-Informed Flow Matching for Graph Reconstruction
       authors: Harvey Chen, Nicolas Zilberstein, and Santiago Segarra
-      venue: Transactions on Machine Learning Research (TMLR), 2026. Earlier version at the ICML 2026 Workshop on Structured Probabilistic Inference & Generative Modeling (SPIGM).
+      venue: Transactions on Machine Learning Research (TMLR), 2026
       url: https://openreview.net/forum?id=9sEWrLXGPp
       code: https://github.com/HC-SGW/PIFM
     - title: Feasible Flow Matching for Graph Reconstruction via Within-Sampling Primal-Dual Guidance
