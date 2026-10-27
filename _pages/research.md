@@ -23,7 +23,7 @@ My research interests center on generative modeling, particularly flow matching 
 ## Prior-Informed Flow Matching for Graph Reconstruction {#pifm}
 
 {% include author-list.liquid authors="chen,zilberstein,segarra" %}
-<p class="paper-meta"><span class="paper-status is-published">Accepted</span> PIFM · TMLR (to appear) · Earlier version at ICML 2026 SPIGM Workshop</p>
+<p class="paper-meta"><span class="paper-status is-published">Published</span> PIFM · TMLR 2026 · Earlier version at ICML 2026 SPIGM Workshop</p>
 
 <figure class="research-figure">
   <img src="{{ '/assets/img/pifm-pipeline.png' | relative_url }}" alt="PIFM combines a partially observed graph with a local prior, then transports the initial estimate through a learned flow toward a reconstructed graph." width="1686" height="761" loading="lazy" decoding="async">
@@ -35,8 +35,9 @@ Reconstructing a graph from partial observations requires both local evidence an
 Working with Dr. Nicolas Zilberstein and Prof. Santiago Segarra, I developed the research codebase and led experiments, analysis, figure preparation, and writing for the paper, on which I am the first author.
 
 <nav class="paper-actions" aria-label="PIFM links">
-  <a href="https://arxiv.org/abs/2601.22107">Paper</a>
-  <a href="https://arxiv.org/pdf/2601.22107">PDF</a>
+  <a href="https://openreview.net/forum?id=9sEWrLXGPp">Paper</a>
+  <a href="https://openreview.net/pdf?id=9sEWrLXGPp">PDF</a>
+  <a href="https://arxiv.org/abs/2601.22107">arXiv</a>
   <a href="https://github.com/HC-SGW/PIFM">Code</a>
   <a href="{{ '/publications/#chen2026pifm' | relative_url }}">Cite</a>
 </nav>
