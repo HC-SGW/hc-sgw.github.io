@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header home-intro">
+    <div class="home-intro-text">
+      <h1 class="post-title">
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
+      </h1>
+      <p class="desc">{{ page.subtitle }}</p>
+    </div>
+    {% if page.avatar %}
+      <img
+        class="home-avatar"
+        src="{{ page.avatar.image | prepend: '/assets/img/' | relative_url | bust_file_cache }}"
+        alt="{{ page.avatar.alt }}"
+        width="420"
+        height="420"
+        decoding="async"
+      >
+    {% endif %}
+  </header>
+  <article>
+    <div class="clearfix">{{ content }}</div>
+  </article>
+</div>

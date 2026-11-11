@@ -1,9 +1,12 @@
 ---
-layout: about
+layout: home
 title: About
 permalink: /
 body_class: home-page
 subtitle: Undergraduate researcher · <a href="https://www.rice.edu/">Rice University</a>
+avatar:
+  image: avatar.png
+  alt: Harvey Chen's GitHub avatar
 profile: false
 selected_papers: false
 social: false
