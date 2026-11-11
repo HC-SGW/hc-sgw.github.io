@@ -76,7 +76,7 @@ The method preserves PIFM's permutation equivariance, provides a bound on expect
 <p class="paper-meta"><span class="paper-status">In preparation</span> Occupation Translator</p>
 
 <figure class="research-figure">
-  <img src="{{ '/assets/img/occupation-translator-overview.png' | relative_url }}" alt="Source and candidate occupation profiles enter a task comparison algorithm, which returns ranked candidates and task correspondences for a selected pair. Recorded crosswalk links provide a reference; confidence scores are available where a model is fitted." width="980" height="519" loading="lazy" decoding="async">
+  <img src="{{ '/assets/img/occupation-translator-overview.png' | relative_url }}" alt="Top, a toy example: every source occupation is compared with every candidate occupation; their task statements are embedded, an exact optimal transport plan moves task weight from a source to a candidate at the least total cost, with an optional network term (FGW) tested as a control; candidates are ranked by plan cost. Bottom, real O*NET data: of 37 task statements for Web Developers in 2017, 27 are kept word for word in the 29 statements of 2024, and the transport plan spreads one statement without a copy across several 2024 statements. Among 919 candidates, the lowest costs are Web Developers (0.217), Web and Digital Interface Designers (0.372), and Web Administrators (0.816); the first two are listed by the official crosswalk." width="2164" height="1200" loading="lazy" decoding="async">
   <figcaption>The Occupation Translator ranks candidate matches and shows task correspondences for selected pairs.</figcaption>
 </figure>
 
