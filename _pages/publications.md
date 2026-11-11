@@ -35,11 +35,11 @@ Adaptive primal–dual guidance for incorporating structural constraints into gr
 
 The following project is unpublished. A summary is available on the [Research page]({{ '/research/' | relative_url }}).
 
-### The Occupation Translator: Task-Based Alignment of Occupational Taxonomies
+### Translating Occupations Across Taxonomies With Inspectable Task Correspondences
 
 {% include author-list.liquid authors="chen,xu,loaiza,uribe" %}
 
-Task-based occupation ranking and interpretable task correspondences across occupational classification systems.
+Ranking candidate occupations by exact optimal transport between task statements, with the transport plan as an inspectable task correspondence.
 
 [Read about Occupation Translator →]({{ '/research/#occupation-translator' | relative_url }})
 

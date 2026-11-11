@@ -27,8 +27,8 @@ cv:
       advisor: Prof. César A. Uribe
       date: May 2026–present
       highlights:
-        - Developing an occupation translator using task representations and fused Gromov–Wasserstein comparisons to align occupational taxonomies.
-        - Built an extraction and embedding pipeline for O*NET and ESCO/ISCO to study occupation splits, merges, task reorganization, and ambiguous matches.
+        - Developing an occupation translator that ranks candidate occupations by exact optimal transport between embedded task statements and returns inspectable task correspondences.
+        - Built an extraction and embedding pipeline for O*NET, ESCO, ISCO-08, and Brazil's CBO to study occupation splits, merges, task reorganization, and ambiguous matches.
   publications:
     - title: Prior-Informed Flow Matching for Graph Reconstruction
       authors: Harvey Chen, Nicolas Zilberstein, and Santiago Segarra
